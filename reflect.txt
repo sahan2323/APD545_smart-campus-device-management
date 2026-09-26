@@ -1,0 +1,24 @@
+/***********************************************
+Workshop # 1
+Course: APD545NBB - Fall 2026
+Last Name: Hewa Gallage
+First Name: Sahan Vimukthi
+ID: 178061230
+This assignment represents my own work in accordance
+with Seneca Academic Policy.
+Date: September 25, 2026
+***********************************************/
+
+Workshop 1 Reflection
+
+This one was mostly stuff we covered in the slides so the coding part was fine, but I'm still not really used to IntelliJ so getting the project and files set up took me a while.
+
+If we added a GUI, I don't think the model would need any changes because the device classes only store data and don't print anything. Mostly the view would change, I'd just make a new GUI view. The controller would need a bit of change too since I'm using Scanner in there for input, but the sorting and filtering stuff can stay.
+
+I used abstract classes because interfaces can't have fields or constructors. Putting everything in Device meant I didn't have to repeat the same fields and getters in every device class. The category classes also set the category with super so each device just passes its own values. It also doesn't make sense to create just a "SecurityDevice" object, it has to be a camera or lock.
+
+Adding another rule like maintenance cost over $100 wouldn't be hard, I'd just add one more if check in compareTo when the first two are equal. Nothing else has to change since the sorting uses compareTo anyway.
+
+For the lambda part, it was cleaner than writing a for loop with a bunch of ifs. The filter is one line and if I want to filter by something else I can just pass a different lambda to the same method.
+
+I had a few small issues along the way, mostly with getting the files into the right packages and fixing the header info in each file, but after sorting that out and testing it a couple of times I got the right output.
